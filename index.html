@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>JERO Junior School | Gayaza - Daycare, Kindergarten & Primary</title>
+    <meta name="description" content="JERO Junior School in Gayaza: Nurturing minds through Daycare, Kindergarten, and Primary education. Quality education in Red, White, and Gold.">
+    <meta property="og:title" content="JERO Junior School | Gayaza">
+    <meta property="og:image" content="jerograd.jpg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo-area">
+                <img src="logo.png" alt="JERO Logo" class="school-logo"> <div class="logo-text">JERO <span>Junior School</span></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Enroll</a></li>
+                <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Excellence in Early Education</h1>
+            <p>Providing a Safe & God-fearing Environment in Gayaza</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-gold">Apply Now</a>
+                <a href="https://wa.me/256776027228" class="btn-outline">Talk to Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>Welcome to JERO</h2>
+        <p>Located in Gayaza, JERO Junior School is dedicated to nurturing young minds through high-quality Daycare, Kindergarten, and Primary services.</p>
+    </section>
+
+    <section id="services" class="grid-container">
+        <div class="card">
+    <div class="card-img" style="background-image: url('jero1.jpg');"></div>
+    <div class="card-content">
+        <h3>DayCare</h3>
+        <p>Warm, safe, and attentive care for infants.</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-img" style="background-image: url('jero5.jpg');"></div>
+    <div class="card-content">
+        <h3>Kindergarten</h3>
+        <p>Developing social and literacy skills.</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-img" style="background-image: url('jero2.jpg');"></div>
+    <div class="card-content">
+        <h3>Primary</h3>
+        <p>Academic leadership and character building.</p>
+    </div>
+</div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>School Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="jero5.jpg" alt="Graduation"><div class="overlay"><span>Graduation</span></div></div>
+            <div class="gallery-item"><img src="jero3.jpg" alt="Kids"><div class="overlay"><span>School Fun</span></div></div>
+            <div class="gallery-item"><img src="jero4.jpg" alt="Learning"><div class="overlay"><span>Creative Arts</span></div></div>
+        </div>
+    </section>
+
+    <section id="location" class="section">
+        <h2>Visit Us in Gayaza</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.825224357288!2d32.60334885!3d0.4481084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbdfc12fbb75f%3A0x44f5b967e8997047!2sGayaza!5e0!3m2!1sen!2sug!4v1706000000000" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="contact" class="section gray-bg">
+        <h2>Enroll Your Child</h2>
+        <form action="https://formspree.io/f/your-id" method="POST" class="enroll-form">
+            <input type="text" name="name" placeholder="Parent Name" required>
+            <input type="tel" name="phone" placeholder="Phone (0701 027 228)" required>
+            <select name="service">
+                <option>DayCare</option>
+                <option>Kindergarten</option>
+                <option>Primary</option>
+            </select>
+            <button type="submit" class="btn-red">Submit Inquiry</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 JERO Junior School Gayaza</p>
+            <p>0701 027 228 | 0776 027 228</p>
+        </div>
+    </footer>
+
+    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    <a href="https://wa.me/256776027228" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat with JERO
+    </a>
+
+    <script>
+        // Theme Toggle
+        const themeBtn = document.getElementById('theme-toggle');
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const icon = themeBtn.querySelector('i');
+            icon.className = document.body.classList.contains('dark-mode') ? 'fas fa-sun' : 'fas fa-moon';
+        });
+
+        // Back to Top
+        const topBtn = document.getElementById('backToTop');
+        window.onscroll = () => {
+            topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        };
+        topBtn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+    </script>
+</body>
+</html>
