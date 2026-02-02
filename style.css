@@ -23,7 +23,7 @@ nav { background: var(--red); color: white; position: sticky; top: 0; z-index: 1
 /* Hero (Improved brightness) */
 .hero { 
     height: 80vh; 
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('jero1.jpg'); 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Jero1.jpg'); 
     background-size: cover; background-position: center;
     display: flex; align-items: center; justify-content: center; color: white; text-align: center;
 }
@@ -57,5 +57,6 @@ nav { background: var(--red); color: white; position: sticky; top: 0; z-index: 1
 /* Sticky Widgets */
 .whatsapp-float { position: fixed; bottom: 20px; left: 20px; background: #25D366; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
 #backToTop { position: fixed; bottom: 20px; right: 20px; background: var(--gold); color: white; border: none; padding: 15px; border-radius: 50%; cursor: pointer; display: none; z-index: 1000; }
+
 
 footer { background: #222; color: white; padding: 40px; text-align: center; border-top: 5px solid var(--gold); }
